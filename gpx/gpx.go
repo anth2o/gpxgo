@@ -752,7 +752,7 @@ type GPXPoint struct {
 	// Description info
 	Name        string
 	Comment     string
-	Description string
+	Description CDATA
 	Source      string
 	// TODO
 	// Links       []GpxLink

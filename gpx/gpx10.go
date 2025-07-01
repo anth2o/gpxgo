@@ -189,7 +189,7 @@ type gpx10GpxPoint struct {
 	// Description info
 	Name  string         `xml:"name,omitempty"`
 	Cmt   string         `xml:"cmt,omitempty"`
-	Desc  string         `xml:"desc,omitempty"`
+	Desc  CDATA          `xml:"desc,omitempty"`
 	Src   string         `xml:"src,omitempty"`
 	Links []gpx10GpxLink `xml:"link"`
 	Sym   string         `xml:"sym,omitempty"`
