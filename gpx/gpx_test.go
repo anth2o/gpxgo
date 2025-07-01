@@ -261,7 +261,7 @@ func executeSample11GpxAsserts(t *testing.T, gpxDoc *GPX) {
 	assertEquals(t, gpxDoc.Waypoints[0].GeoidHeight, "2.0")
 	assertEquals(t, gpxDoc.Waypoints[0].Name, "example name")
 	assertEquals(t, gpxDoc.Waypoints[0].Comment, "example cmt")
-	assertEquals(t, gpxDoc.Waypoints[0].Description, "example desc")
+	assertEquals(t, gpxDoc.Waypoints[0].Description, CDATA("example desc"))
 	assertEquals(t, gpxDoc.Waypoints[0].Source, "example src")
 	// TODO
 	// Links       []GpxLink
@@ -297,7 +297,7 @@ func executeSample11GpxAsserts(t *testing.T, gpxDoc *GPX) {
 	assertEquals(t, gpxDoc.Routes[0].Points[0].GeoidHeight, "2.1")
 	assertEquals(t, gpxDoc.Routes[0].Points[0].Name, "example name r")
 	assertEquals(t, gpxDoc.Routes[0].Points[0].Comment, "example cmt r")
-	assertEquals(t, gpxDoc.Routes[0].Points[0].Description, "example desc r")
+	assertEquals(t, gpxDoc.Routes[0].Points[0].Description, CDATA("example desc r"))
 	assertEquals(t, gpxDoc.Routes[0].Points[0].Source, "example src r")
 	// TODO
 	//assertEquals(t, gpxDoc.Routes[0].Points[0].Link, "http://linkrtept")
@@ -338,7 +338,7 @@ func executeSample11GpxAsserts(t *testing.T, gpxDoc *GPX) {
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].GeoidHeight, "13")
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Name, "example name t")
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Comment, "example cmt t")
-	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Description, "example desc t")
+	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Description, CDATA("example desc t"))
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Source, "example src t")
 	// TODO link
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Symbol, "example sym t")
@@ -423,7 +423,7 @@ func executeSample10GpxAsserts(t *testing.T, gpxDoc *GPX) {
 	assertEquals(t, gpxDoc.Waypoints[0].GeoidHeight, "2.0")
 	assertEquals(t, gpxDoc.Waypoints[0].Name, "example name")
 	assertEquals(t, gpxDoc.Waypoints[0].Comment, "example cmt")
-	assertEquals(t, gpxDoc.Waypoints[0].Description, "example desc")
+	assertEquals(t, gpxDoc.Waypoints[0].Description, CDATA("example desc"))
 	assertEquals(t, gpxDoc.Waypoints[0].Source, "example src")
 	// TODO
 	// Links       []GpxLink
@@ -459,7 +459,7 @@ func executeSample10GpxAsserts(t *testing.T, gpxDoc *GPX) {
 	assertEquals(t, gpxDoc.Routes[0].Points[0].GeoidHeight, "2.1")
 	assertEquals(t, gpxDoc.Routes[0].Points[0].Name, "example name r")
 	assertEquals(t, gpxDoc.Routes[0].Points[0].Comment, "example cmt r")
-	assertEquals(t, gpxDoc.Routes[0].Points[0].Description, "example desc r")
+	assertEquals(t, gpxDoc.Routes[0].Points[0].Description, CDATA("example desc r"))
 	assertEquals(t, gpxDoc.Routes[0].Points[0].Source, "example src r")
 	// TODO link
 	//assertEquals(t, gpxDoc.Routes[0].Points[0].Link, "http://linkrtept")
@@ -500,7 +500,7 @@ func executeSample10GpxAsserts(t *testing.T, gpxDoc *GPX) {
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].GeoidHeight, "13")
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Name, "example name t")
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Comment, "example cmt t")
-	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Description, "example desc t")
+	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Description, CDATA("example desc t"))
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Source, "example src t")
 	// TODO link
 	assertEquals(t, gpxDoc.Tracks[0].Segments[0].Points[0].Symbol, "example sym t")
